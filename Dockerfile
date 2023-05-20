@@ -1,11 +1,11 @@
 FROM python:3.10
 
-RUN mkdir -p /indoor_plants
+WORKDIR /plants
 
-COPY . /indoor_plants/
+COPY . .
 
-RUN python3 -m pip install -r /indoor_plants/requirements.txt
+RUN pip3 install -r requirements.txt
 
 EXPOSE 5000
 
-CMD ["python", "/indoor_plants/app.py"]
+CMD ["python", "app.py"]
