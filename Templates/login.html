@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Login Page</title>
+    <link rel="stylesheet" href="static/css/login.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-container">
+        </div>
+        <form action="/login" method="POST">
+            <h1>Welcome, Login Here</h1>
+            <input name="username" type="text" placeholder="Enter your username" required>
+            <input name="password" type="password" placeholder="Enter your password" required>
+            <button type="submit">Login</button>
+            <div class="forget-password">
+                <a href="#">Forgot password?</a>
+            </div>
+            <div class="register">
+                Don't have an account? <a href="/register">Register here</a>
+            </div>
+        </form><br>
+        {{msg}}
+    </div>
+</body>
+
+</html>

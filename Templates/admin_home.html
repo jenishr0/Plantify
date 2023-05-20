@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Household Plant Guide</title>
+    <link rel="stylesheet" href="static/css/admin_home.css">
+</head>
+
+<body>
+    <div class="header">
+        <h1>Indoor Plants</h1>
+        <ul class="nav-links">
+            <li><a href="/home">Home</a></li>
+            <li><a href="/addplants">Plants</a></li>
+            <li><a href="/guide">Guide</a></li>
+        </ul>
+    </div>
+    <div class="center">
+        <h2>Add Plants</h2>
+        <form action="/addplants" method="POST" enctype="multipart/form-data">
+            <label for="plantname">Plant Name:</label>
+            <input type="text" id="plantname" name="plantname"><br><br>
+            <label for="plantid">Plant ID:</label>
+            <input type="text" id="plantid" name="plantid"><br><br>
+            <label for="cost">Cost:</label>
+            <input type="text" id="cost" name="cost"><br><br>
+            <label for="imageupload">Upload Image:</label>
+            <input type="file" id="image" name="image"><br><br>
+            <input type="submit" value="Add">
+        </form>
+    </div>
+</body>
+
+</html>

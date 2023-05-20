@@ -1,0 +1,105 @@
+ * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #dc5f8d;
+            padding: 10px 20px;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-links li {
+            list-style: none;
+            margin: 0 10px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            font-size: 18px;
+            line-height: 1.5em;
+        }
+
+        li {
+            margin: 5px 0;
+        }
+
+        li:before {
+            content: '●';
+            margin-right: 5px;
+        }
+
+         .center {
+            margin: auto;
+            width: 50%;
+            border: 3px solid #c26a87;
+            padding: 10px;
+        }
+
+        .center h2{
+            text-align: center;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        input[type="text"],
+        input[type="file"],
+        input[type="submit"] {
+            padding: 10px;
+            margin: 10px;
+            font-size: 18px;
+            border-radius: 5px;
+            background-color: #ceecef;
+            border: 2px solid #ccc;
+            border: none;
+            outline: none;
+        }
+
+        input[type="text"]:focus,
+        input[type="file"]:focus,
+        input[type="submit"]:focus {
+            outline: none;
+            border-color: #a36e7f;
+        }
+
+
+        input[type="submit"] {
+            background-color: #dc76a9;
+            color: white;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #e26c99;
+        }

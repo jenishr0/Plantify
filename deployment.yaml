@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mysafe
+  labels:
+    app: my-plants
+spec:
+  replicas: 5
+  selector:
+    matchLabels:
+      app: my-plants
+  template:
+    metadata:
+      labels:
+        app: my_plants
+    spec:
+      containers:
+        - name: mysafe
+          image: us.icr.io/houseplants/household_plants:1.0
+          ports:
+            - containerPort: 5000

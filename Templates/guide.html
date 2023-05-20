@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Household Plant Guide</title>
+    <link rel="stylesheet" href="static/css/guide.css">
+</head>
+
+<body>
+    <div class="header">
+        <h1>Indoor Plants</h1>
+        <ul class="nav-links">
+            <li><a href="/home">Home</a></li>
+            <li><a href="/addplants">Plants</a></li>
+            <li><a href="/guide">Guide</a></li>
+            <li><a href="#">View Added Plants</a></li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <div class="guide">
+            <h2>Care Guide</h2>
+            <p>Here you will find all sorts of information about house plants, including how to care for them, what
+                types of
+                plants are best for certain environments, and even how to style them in your home. House plants are a
+                great
+                way to add some natural beauty to your indoor space, and with so many different types of house plants
+                available, you are sure to find one that meets your needs.</p>
+            <form action="/guide" method="POST">
+                <label for="plant-type">Select a plant type:</label>
+                <select name="plant-type" id="plant-type">
+                    <option value="succulent">Succulent</option>
+                    <option value="fern">Fern</option>
+                    <option value="vine">Vine</option>
+                    <option value="cactus">Cactus</option>
+                </select>
+                <button type="button">Explore more</button>
+            </form>
+        </div>
+        <div class="plant-img-container">
+            <img class="plant-img" src="static/images/plants1.jpg" alt="Plant" id="plant-img">
+        </div>
+    </div>
+
+</body>
+
+</html>
