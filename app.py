@@ -6,7 +6,7 @@ import os
 app = Flask(__name__)
 app.secret_key = "a"
 
-conn = ibm_db.connect("database =bludb;hostname =19af6446-6171-4641-8aba-9dcff8e1b6ff.c1ogj3sd0tgtu0lqde00.databases.appdomain.cloud;port = 30699;uid = kgt86210;password =umagirJzEvpXZIDD;security=SSL;SSLServercertificate = DigiCertGlobalRootCA.crt ", " ", " ")
+conn = ibm_db.connect("database =bludb;hostname =19af6446-6171-4641-8aba-9dcff8e1b6ff.c1ogj3sd0tgtu0lqde00.databases.appdomain.cloud;port = 30699;uid = kgt86210;password =umagirJzEvpXZIDD;security=SSL;SSLServercertificate = DigiCertGlobalRootCA.crt", " ", " ")
 print("Connection Succesfull")
 
 
@@ -162,4 +162,4 @@ def transaction():
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()
