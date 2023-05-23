@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: myplants
+  name: my-plants
 spec:
   selector:
-    app: myplants
+    app: my-plants
   ports:
     - port: 5000
   type: NodePort
@@ -12,22 +12,22 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: myplants
+  name: my-plants
   labels:
-    app: myplants
+    app: my-plants
 spec:
   selector:
     matchLabels:
-      app: myplants
+      app: my-plants
   replicas: 1
   template:
     metadata:
       labels:
-        app: myplants
+        app: my-plants
     spec:
       containers:
-        - name: myplants
-          image: us.icr.io/householdplants/myplants:latest
+        - name: my-plants
+          image: mplants
           ports:
             - containerPort: 5000
           env:

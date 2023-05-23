@@ -1,13 +1,13 @@
 from flask import Flask, render_template, request, session
-import ibm_db
-import ibm_boto3
-from ibm_botocore.client import Config, ClientError
+# import ibm_db
+# import ibm_boto3
+# from ibm_botocore.client import Config, ClientError
 import os
 app = Flask(__name__)
 app.secret_key = "a"
 
-conn = ibm_db.connect("database =bludb;hostname =19af6446-6171-4641-8aba-9dcff8e1b6ff.c1ogj3sd0tgtu0lqde00.databases.appdomain.cloud;port = 30699;uid = kgt86210;password =umagirJzEvpXZIDD;security=SSL;SSLServercertificate = DigiCertGlobalRootCA.crt", " ", " ")
-print("Connection Succesfull")
+# conn = ibm_db.connect("database =bludb;hostname =19af6446-6171-4641-8aba-9dcff8e1b6ff.c1ogj3sd0tgtu0lqde00.databases.appdomain.cloud;port = 30699;uid = kgt86210;password =umagirJzEvpXZIDD;security=SSL;SSLServercertificate = DigiCertGlobalRootCA.crt", " ", " ")
+# print("Connection Succesfull")
 
 
 @app.route('/')
