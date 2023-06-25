@@ -1,28 +1,50 @@
-# Household Plants Descriptor and Buyer
+Household Plants E-commerce App
 
-This application allows users to browse through a collection of household plants and select their preferred ones for purchase. It utilizes an API to fetch and display the plants' descriptions, prices, and images. 
+This app is a household plants e-commerce platform that allows users to browse through plants available on the website and purchase them. It is built with Python and Flask and utilizes an external API to display plant descriptions and prices. Users can create an account to store their personal details and purchase history. The app is containerized with Docker and deployed using Kubernetes for efficient and scalable management.
 
-To enhance user experience, the application also provides a way for users to create an account, store their personal details, and keep track of their purchases history.
+Table of Contents
+Installation
+Usage
+Technologies Used
+Contributing
+License
+Installation
 
-The application is built using Python and Flask framework, and utilizes IBMcloudDB as its database management system. 
+To use this app, you will need to have Docker and Kubernetes installed on your machine. Clone this repository and navigate to the root directory.
 
-To ensure scalability and efficient deployment, the application is containerized using Docker and deployed using Kubernetes.
+To build the Docker image, run the following command:
 
-## API Endpoints
+Bash
+docker build . -t <image-name>
 
-The following are the API endpoints used in the application:
 
-1. `/api/plants` - Returns a list of all the plants in the collection.
-2. `/api/plants/{id}` - Returns details of a specific plant in the collection.
-3. `/api/users` - Returns a list of all the registered users.
-4. `/api/users/{id}` - Returns details of a specific user.
-5. `/api/orders` - Returns a list of all orders placed by users.
-6. `/api/orders/{id}` - Returns details of a specific order.
+To deploy the app using Kubernetes, first apply the necessary Kubernetes configurations in the kubernetes directory:
 
-## Technologies Used
+Bash
+kubectl apply -f kubernetes
 
-- Python
-- Flask
-- IBMcloudDB
-- Docker
-- Kubernetes
+
+Once all the configurations have been applied successfully, the app should be up and running.
+
+Usage
+
+To use the app, navigate to the URL where it is deployed. You can browse through the different plants available and add them to your cart. Create an account to store your personal details and purchase history. Once you are ready to make a purchase, checkout and make the payment.
+
+Technologies Used
+Python
+Flask
+Docker
+Kubernetes
+External API
+Contributing
+
+If you would like to contribute to this app, please follow these steps:
+
+Fork this repository
+Create a new branch (git checkout -b feature/<feature-name>)
+Make your changes and commit them (git commit -m "Add feature")
+Push your changes to your forked repository (git push origin feature/<feature-name>)
+Open a pull request
+License
+
+This project is licensed under the MIT License. See the LICENSE file for more information.
